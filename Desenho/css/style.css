@@ -1,0 +1,126 @@
+
+
+body{
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+}
+canvas{
+    background: hsl(0, 0%, 100%);
+    border: 1px dashed;
+    margin: auto;
+}
+
+a {
+    display:inline-block;
+    background: #ffd079;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+.pen-tools{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+    .fa-refresh{
+        margin-left: 10px;
+        background-color:rgba(250, 245, 176, 0.335);
+        padding: 5px 10px;
+        border-radius: 100px;
+        color: rgb(240, 143, 33);
+        cursor: pointer;
+    }
+
+    .pen-size{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .board {
+        width: 800px;
+        margin: auto;
+    
+    }
+
+    .drawing-colors{
+       display: flex;
+        margin-bottom: 10px;
+    }
+
+    .color-circle{
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        margin-left: 5px;
+        border: 1px solid solid black;
+        cursor: pointer;
+    }
+
+    .color-circle:nth-child(1){
+        background-color: rgb(0, 0, 0);
+    }
+    .color-circle:nth-child(2){
+        background-color: rgb(83, 75, 80);
+    }
+    .color-circle:nth-child(3){
+        background-color: rgb(250, 250, 250);
+    }
+    .color-circle:nth-child(4){
+        background-color: rgb(238, 255, 0);
+    }
+    .color-circle:nth-child(5){
+        background-color: rgb(52, 8, 248);
+    }
+    .color-circle:nth-child(6){
+        background-color: rgb(255, 30, 30);
+    }
+    .color-circle:nth-child(7){
+        background-color: rgb(255, 0, 200);
+    }
+    .color-circle:nth-child(8){
+        background-color: rgb(0, 255, 42);
+    }
+    .active {
+        transform: scale(1.3)
+    }
+
+    a.button
+
+{
+
+border: 1px solid white;
+
+border-radius: 10px;
+
+box-shadow: 0 0 34px rgb(241, 106, 106) inset;
+
+color: white;
+
+text-align: center;
+
+text-decoration: none;
+
+text-shadow: 0 1px 2px white;
+
+text-transform: uppercase;
+
+font: lighter 12px Helvetica,sans-serif;
+
+transition: color 0.25s ease-in-out 0s;
+
+margin: 0 auto;
+
+padding: 7px 2%;
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/paintexe.png">
+    
+ 
+    <title> Paint.exe</title>
+</head>
+<body>
+  
+  
+    <div>
+
+      <div style="width: 100%; overflow: hidden;"><img src="assets/rat running.png" data-api-returntype="File" data-decorative="true" /></div>
+    </div>
+    <div class="clsDiv" style="background: rgb(248, 237, 135); width: 100%;">
+
+        <a href="https://twitter.com/catmarez" class="button">Twitter.exe</a>
+        
+      
+    </div>
+      <p> Arreste o mouse para desenhar 
+          <a href= "" download="my_painting.png">Download my painting</a>
+          <i class="fa fa-refresh refresh-btn"><strong>Clear</strong></i>
+      </p>
+      <div id="pen-tools" class="pen-tools">
+        <div id="drawing-colors" class="drawing-colors">
+          <div class="color-circle active" data-color="solidBlack"onclick="selectColor(this)" ></div>
+          <div class="color-circle" data-color="gray" onclick="selectColor(this)"></div>
+          <div class="color-circle" data-color="white" onclick="selectColor(this)"></div>
+          <div class="color-circle" data-color="yellow" onclick="selectColor(this)"></div>
+          <div class="color-circle"data-color="blue"onclick="selectColor(this)"></div>
+          <div class="color-circle" data-color="red" onclick="selectColor(this)"></div>
+          <div class="color-circle" data-color="hotpink"onclick="selectColor(this)"></div>
+          <div class="color-circle"data-color="lime"onclick="selectColor(this)"></div>
+        </div>
+        <div id="favContainer"><label for="favcolor">Select your favourite color:</label>
+          <input type="color" name="favcolor"id="favcolor"value="#0000FF"onchange="favColor(this)"/>
+        </div>
+        <div id="pen-size" class="pen-size"><label for="pen-size"><i class="fa fa-pencil"></i> Pen size</label>
+          <input type="range"name="pen-size" id="pen-size" value="10" step="5"min="3"max="40" onchange="penSizeChange(this.value)"/>
+        </div>
+      </div>
+  
+      <div class="board">
+         <canvas width="800px" height="590"></canvas>
+      </div>
+      <script src="js/script.js"></script>
+    </body>
+    
+  </html>
